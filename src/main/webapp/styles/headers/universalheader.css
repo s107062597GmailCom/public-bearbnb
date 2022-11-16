@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css2?family=Peralta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap');
+
+/**************** Universal Header ****************/
+
+header.universalheader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 96px;
+    width: 100%;
+    height: 68px;
+    z-index: 32767;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 2px #ccc;
+    display: flex;
+    transition: all .2s;
+}
+
+div.universalheader-inner-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-width: 960px;
+}
+
+div.universal-header-navbar-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+nav.universal-header-navbar {
+    position: relative;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.header-logo-container {
+    position: relative;
+    width: 320px;
+    display: flex;
+    align-items: center;
+}
+
+img.header-logo {
+    height:32px;
+}
+
+div.fake {
+    visibility: hidden;
+}
+
+div.search-bar-container {
+    position: relative;
+    width: 320px;
+    height: 40px;
+    border: solid 1px #ccc;
+    border-radius: 20px;
+    display: flex;
+    background-color: #eee;
+}
+
+button.search-bar-btn {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+button.search-bar-left-btn {
+    width: 30%;
+    padding-left: 8px;
+    border-radius: 20px 0 0 20px;
+}
+
+button.search-bar-middle-btn {
+    width: 29%;
+}
+
+button.search-bar-right-btn {
+    width: 12%;
+    border-radius: 0 50% 50% 0;
+    background-color: transparent;
+}
+
+div.search-bar-input {
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 20px;
+}
+
+div.search-bar-left-input {
+    /* padding-left: 8px; */
+    border-right: solid 1px #ccc;
+    font-weight: 500;
+}
+
+div.search-bar-middle-input {
+    border-right: solid 1px #ccc;
+    font-weight: 500;
+}
+
+div.search-bar-right-input {
+    font-weight: 500;
+    color: #444;
+}
+
+div.search-icon-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    transition: all .2s;
+    background-color: transparent;
+}
+
+div.search-icon-container:hover {
+    background-color: #ccc;
+}
+
+div.search-icon {
+    margin: 3px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #444;
+    font-size: 16px;
+    color: #eee;
+    line-height: 30px;
+}
+
+div.header-menu-container {
+    position: relative;
+    width: 320px;
+    height: 40px;
+}
+
+div.header-menu {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+button.account-menu-btn {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 20px;
+}
+
+div.account-menu-btn {
+    position: relative;
+    width: 96px;
+    height: 100%;
+    border: solid 1px #ccc;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #eee;
+}
+
+div.user-icon {
+    margin: 3px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    color: #eee;
+    background-color: #444;
+    line-height: 28px;
+}
+
+div.menu-icon-container {
+    width: 48%;
+    height: 100%;
+    padding-right: 4px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+div.menu-icon {
+    position: relative;
+    width: 32px;
+    height: 80%;
+    padding: 6px 0;
+    border-radius: 8px;
+    background-color: #ccc;
+}
+
+div.burger-menu-component {
+    height: 2px;
+    margin: 3px 6px;
+    border-radius: 1px;
+    background-color: #666;
+}
+
+button.regional-setting-btn {
+    position: relative;
+    height: 100%;
+    margin: 0 8px;
+    border: 0;
+    padding: 0;
+    border-radius: 24px;
+}
+
+div.regional-setting-icon-container {
+    position: relative;
+    width: 48px;
+    height: 100%;
+    margin: 0;
+    border: 0;
+    color: #444;
+    text-align: center;
+    line-height: 40px;
+}
+
+button.rent-room-shortcut-btn, button.sign-in-shortcut-btn {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    border-radius: 24px;
+}
+
+div.rent-room-icon-container, div.sign-in-icon-container {
+    position: relative;
+    width: 160px;
+    height: 100%;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    color: #444;
+    text-align: center;
+    line-height: 40px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    transition: all .2s;
+}
+
+.hover-background {
+    background-color: transparent;
+    transition: all .2s;
+}
+
+.hover-background:hover {
+    background-color: #ccc;
+    transition: all .2s;
+}
+
+.hover-shadow {
+    box-shadow: 2px 2px 2px #ccc;
+    transition: all .2s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 2px 2px 2px #888;
+}
+
+/**************** account menu ****************/
+
+div.header-account-menu {
+    position: fixed;
+    top: -8192px;
+    right: 96px;
+    width: 224px;
+    border-radius: 8px;
+    z-index: 32768;
+    background-color: #eee;
+    box-shadow: 0 0 4px #aaa;
+}
+
+div.header-account-menu-inner-container {
+    position: relative;
+    height: 100%;
+    padding: 4px 0;
+}
+
+button.header-accont-menu-option-btn {
+    position: relative;
+    width: 100%;
+    height: 36px;
+    margin: 0;
+    border: 0;
+    border-radius: 4px;
+    padding: 0 16px;
+    background-color: transparent;
+}
+
+button.header-accont-menu-option-btn:hover {
+    background-color: #ccc;
+}
+
+div.header-accont-menu-option {
+    line-height: 32px;
+    text-align: left;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+}
+
+div.header-accont-menu-divider {
+    height: 2px;
+    background-color: #aaa;
+    margin: 8px;
+}
+
+div.header-account-menu-account-info-blk {
+    position: relative;
+    height: 64px;
+    padding: 4px 12px 0 12px;
+    display: flex;
+}
+
+div.header-account-menu-photo-container {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: aqua;
+    overflow: hidden;
+}
+
+img.account-photo-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+div.header-account-photo-container {
+    position: relative;
+    margin-top: 2px;
+    margin-left: -8px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+div.header-account-menu-info-container {
+    position: relative;
+    margin-left: 12px;
+    margin-top: 4px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+}
+
+/**************** hello world ****************/
+
+div.header-hello-world-btn-container {
+    position: fixed;
+    left: 50%;
+    bottom: -1024px;
+    width: 400px;
+    height: 400px;
+    margin-bottom: -200px;
+    margin-left: -200px;
+    border-radius: 4px;
+    padding: 10px;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 32769;
+    transition: all .4s;
+}
+
+div.header-hello-world-hint {
+    position: relative;
+    width: 100%;
+    height: 40%;
+    padding: 4px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    line-height: 48px;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 4px;
+}
+
+div.header-hello-world-btn-inner-container {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    padding: 16px;
+    justify-content: space-around;
+}
+
+button.header-hello-world-blk-btn {
+    position: relative;
+    width: 48%;
+    border: 0;
+    border-radius: 16px;
+    font-size: 18px;
+    font-family: 'Noto Sans TC', sans-serif;
+    color: #fff;
+    background-color:rgba(240, 0, 120, 0.8);
+}
+
+button.header-hello-world-blk-btn:hover {
+    background-color: rgba(240, 0, 120, 1);
+}
+
+/**************** full universal header ****************/
+
+div.bus-search-bar-container {
+    position: fixed;
+    top: 14px;
+    left: 50%;
+    margin-left: -160px;
+}
+
+div.search-bar-filter {
+    position: fixed;
+    top: 14px;
+    left: 50%;
+    margin-left: -160px;
+    background-color: #eee;
+    transition: all .2s;
+    z-index: -32768;
+}
+
+div.full-search-bar-container {
+    position: fixed;
+    width: 640px;
+    height: 80px;
+    top: 88px;
+    left: 50%;
+    margin-left: -320px;
+    border: solid 1px #ccc;
+    border-radius: 40px;
+    display: flex;
+    background-color: #eee;
+    z-index: 65535;
+}
+
+input.search-bar-input {
+    width: 90%;
+    height: 26px;
+    margin-right: 19px;
+    border: 0;
+    font-size: 14px;
+    background-color: transparent;
+    text-align: center;
+    cursor: pointer;
+}
+
+div.location-search-bar-input {
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+label.city-select-label {
+    margin: 0;
+    padding-top: 2px;
+}
+
+label.data-input-label {
+    font-size: 14px;
+}
+
+div.location-search-bar-full-input {
+    display: none;
+}
+
+div.time-search-bar-full-input {
+    display: none;
+}
+
+div.people-number-search-bar-full-input {
+    margin-left: 32px;
+    display: none;
+}
+
+div.date-input-container {
+    margin: 4px 0 4px 26px;
+    text-align: left;
+    font-size: 14px;
+}
+
+div.people-number-input-blk {
+    width: 120px;
+}
+
+div.people-number-input-blk input {
+    width: 64px;
+    font-size: 14px;
+}
+
+
+/**************** filter ****************/
+
+div.universalheader-filter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -32768;
+    background-color: transparent;
+}
+
+/**************** rental mode ****************/
+
+div.rental-mode-main-menu-container {
+    position: fixed;
+    width: 512px;
+    height: 40px;
+    top: 14px;
+    left: 50%;
+    margin: 0 0 0 -256px;
+    border: 0;
+    padding: 0;
+    display: none;
+    background-color: #f8f8f8;
+}
+
+div.rental-mode-main-menu-inner-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+button.rental-mode-main-menu-option-btn {
+    width: 96px;
+    margin-left: 16px;
+    border: solid 2px transparent;
+    border-radius: 48px;
+    background-color: transparent;
+    transition: all .2s;
+}
+
+button.rental-mode-main-menu-option-btn:hover {
+    background-color: #eee;
+    box-shadow: 2px 2px 2px #ddd;
+}
+
+div.rental-mode-main-menu-option {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+}
+
+div.rental-mode-header-menu {
+    position: fixed;
+    top: -8192px;
+    left: 0;
+    width: 224px;
+    border-radius: 8px;
+    z-index: 32768;
+    background-color: #eee;
+    box-shadow: 0 0 4px #aaa;
+}
+
+div.rental-mode-header-menu-inner-container {
+    position: relative;
+    height: 100%;
+    padding: 4px 0;
+}
+
+button.rental-mode-header-menu-option-btn {
+    position: relative;
+    width: 100%;
+    height: 36px;
+    margin: 0;
+    border: 0;
+    border-radius: 4px;
+    padding: 0 16px;
+    background-color: transparent;
+}
+
+button.rental-mode-header-menu-option-btn:hover {
+    background-color: #ccc;
+}
+
+div.rental-mode-header-menu-option {
+    line-height: 32px;
+    text-align: left;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+}
+
+div.rental-mode-header-menu-divider {
+    height: 2px;
+    background-color: #aaa;
+    margin: 8px;
+}
+
+button.goto-guest-mode-page-btn {
+    display: none;
+}
+
+img.account-photo-img {
+    cursor: pointer;
+}
+
+span.modify-my-account-info-btn {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 300;
+    color: #888;
+    line-height: 32px;
+    border-radius: 4px;
+}
+
+span.modify-my-account-info-btn:hover {
+    color: #444;
+    background-color: #ccc;
+}

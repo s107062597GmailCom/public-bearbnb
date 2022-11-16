@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+div.global-background {
+    position: relative;
+}
+
+div.main-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+main.main-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 68px;
+}
+
+div.main-content-inner-container {
+    position: relative;
+    display: flex;
+}
+
+div.schedule-rooms-container {
+    position: relative;
+    width: 60%;
+    margin: 88px 128px;
+    /* display: flex; */
+}
+
+div.wishes-block-container {
+    position: relative;
+    width: 40%;
+}
+
+div.wishes-window-container {
+    position: fixed;
+    width: 576px;
+    height: 745px;
+    top: 160px;
+    right: 4%;
+    /* background-color: #ccc; */
+    border-radius: 16px;
+    box-shadow: 0 0 8px #aaa;
+    z-index: 5;
+}
+
+div.wish-list-schedule-hint-container {
+    position: relative;
+    width: 100%;
+    height: 6%;
+    margin-top: 12px;
+    display: flex;
+}
+
+div.wish-list-schedule-hint {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #666;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 20px;
+    border-radius: 8px;
+    color: white;
+}
+
+div.wishes-window {
+    position: relative;
+    width: 96%;
+    height: 80%;
+    margin: 2%;
+    overflow: auto;
+    border: solid 2px #888;
+    border-radius: 8px;
+}
+
+div.wishes-container {
+    position: relative;
+    width: 100%;
+}
+
+button.wish-container {
+    position: relative;
+    width: 100%;
+    height: 128px;
+    background-color: #fff;
+    margin: 0 0 4px 0;
+    border: 0;
+    padding-top: 3px;
+    display: flex;
+    transition: all .2s;
+    border-radius: 0;
+}
+
+button.wish-container:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+
+div.room-photo-container {
+    position: relative;
+    width: 214px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+img.room-photo {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+div.room-info-container {
+    position: relative;
+    width: 256px;
+    height: 120px;
+    padding-left: 8px;
+    /* background-color: azure; */
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+div.room-info-line {
+    position: relative;
+    height: 28px;
+    line-height: 28px;
+    color: #444;
+    text-align: start;
+}
+
+div.room-city-info {
+    height: 36px;
+    font-size: 18px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 900;
+    line-height: 36px;
+    color: black;
+}
+
+div.room-title-info {
+    overflow: hidden;
+}
+
+div.room-distance-info {
+    font-size: 14px;
+    line-height: 28px;
+    color: #888;
+}
+
+div.wishes-window-btn-container {
+    position: relative;
+    display: flex;
+    height: 54px;
+    margin: 0 12px;
+    justify-content: space-around;
+}
+
+div.auto-schedule-btn-container-blk {
+    position: relative;
+    display: flex;
+    width: 160px;
+    height: 100%;
+}
+
+div.check-box-blk-container {
+    position: relative;
+    width: 48px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.check-box-container {
+    position: relative;
+    width: 48px;
+    height: 96px;
+    border-left: solid 2px #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input.choose-check-box {
+    width: 24px;
+    height: 24px;
+}
+
+button.btn-in-auto-schedule-blk {
+    position: relative;
+    background-color: rgba(240, 0, 120, 0.8);
+    width: 100%;
+    color: #fff;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    border: 0;
+    border-radius: 8px;
+    padding: 0;
+}
+
+button.btn-in-auto-schedule-blk:hover {
+    background-color: #f00087;
+}
+
+div.wish-list-loading-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+div.wish-list-loading-container>img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+div.no-room-in-wish-list {
+    position: relative;
+    width: 100%;
+    height: 596px;
+    display: flex;
+    color: #444;
+    font-size: 24px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+}
+
+div.schedule-rooms-init-inner-container {
+    position: relative;
+    width: 100%;
+    height: 512px;
+    border-radius: 18px;
+    background-color: rgba(240, 0, 120, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.schedule-rooms-init-hint {
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+button.schedule-room-container-btn {
+    position: relative;
+    width: 90%;
+    height: 192px;
+    left: 256px;
+    margin: 0 0 32px;
+    border: solid #ccc;
+    border-width: 1px 2px 2px 1px;
+    border-radius: 16px;
+    padding: 0;
+    background-color: white;
+    transition: all .4s;
+    box-shadow: 0 0 0 #fff;
+}
+
+button.schedule-room-container-btn:hover {
+    box-shadow: 4px 4px 4px #ccc;
+}
+
+div.schedule-room-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: 0;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.schedule-room-info-part {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    display: flex;
+}
+
+div.schedule-room-order-part {
+    position: relative;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.schedule-room-order-container {
+    width: 100%;
+    color: #444;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: center;
+}
+
+div.room-photo-container {
+    position: relative;
+    width: 256px;
+    height: 100%;
+    border-radius: 8px;
+}
+
+img.room-photo {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+div.schedule-room-info-container {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding-left: 16px;
+    background-color: transparent;
+}
+
+div.room-info-idx-container {
+    position: relative;
+    text-align: left;
+    font-weight: 500;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+div.room-info-city-idx-container {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+div.little-gray {
+    font-size: 16px;
+    color: #666;
+}
+
+div.schedule-btn-filter {
+    position: absolute;
+    width: 105%;
+    height: 110%;
+    top: -8px;
+    left: -8px;
+    z-index: 2;
+    background-color: #fff;
+    transition: all .4s ease-out;
+}
+
+div.init-img-container-transparent {
+    position: relative;
+    width: 100%;
+    height: 384px;
+    border-radius: 16px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+div.map-block {
+    position: fixed;
+    width: 40%;
+    height: 790px;
+    top: 128px;
+    right: -39%;
+    z-index: 10;
+    transition: all .4s;
+}
+
+div.map-block-inner-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+div.show-map-btn-blk {
+    position: relative;
+    width: 18px;
+    background-color: transparent;
+}
+
+div.show-map-btn-container {
+    position: relative;
+    width: 100%;
+    height: 32px;
+    margin-top: 4px;
+    background-color: white;
+    border-radius: 4px 0 0 4px;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+    box-shadow: 0 0 16px #888;
+}
+
+div.google-map-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: solid 0px #444;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 16px #888;
+}
+
+div.google-map {
+    position: relative;
+    width: 98%;
+    height: 98%;
+    border: solid 1px #444;
+    border-radius: 4px;
+}

@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+div.global-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+div.schedule-controller-container {
+    position: fixed;
+    top: 160px;
+    right: 10%;
+    width: 384px;
+    padding-bottom: 32px;
+    height: 420px;
+    z-index: 32;
+}
+
+div.schedule-controller {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: solid 1px #ccc;
+    border-radius: 16px;
+    padding: 0;
+    background-color: white;
+    box-shadow: 0 0 8px #ccc;
+}
+
+div.schedule-inner-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: 0;
+    padding: 0 32px;
+}
+
+div.schedule-controller-hint-container {
+    position: relative;
+    width: 100%;
+    height: 96px;
+    margin: 0 auto;
+    border: 0;
+    padding: 32px 0 0 24px;
+}
+
+div.schedule-controller-hint-container>h3 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+}
+
+button.schedule-controller-input-block {
+    position: relative;
+    width: 100%;
+    height: 71px;
+    margin: 0;
+    border: solid #aaa;
+    padding: 0;
+    background-color: white;
+    display: block;
+}
+
+button.schedule-controller-upper-input-block {
+    border-width: 2px 2px 1px 2px;
+    border-radius: 16px 16px 0 0;
+}
+
+button.schedule-controller-lower-input-block {
+    border-width: 1px 2px 2px 2px;
+    border-radius: 0 0 16px 16px;
+}
+
+div.schedule-controller-dates-input-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 0;
+    padding: 0;
+    display: flex;
+}
+
+div.schedule-controller-start-date-input-container {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: solid #aaa;
+    border-width: 0 1px 0 0;
+    padding: 0;
+}
+
+div.schedule-controller-end-date-input-container {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 0;
+}
+
+div.schedule-controller-date-input-hint {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    padding: 12px 0 0 16px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: left;
+}
+
+div.schedule-controller-common-date-input {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    border: 0;
+    padding: 0 0 0 16px;
+    text-align: left;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+}
+
+div.schedule-controller-people-number-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 0;
+    padding: 0;
+}
+
+div.schedule-controller-people-number-input-hint {
+    position: relative;
+    width: 100%;
+    height: 40%;
+    top: 0;
+    margin: 0;
+    border: 0;
+    padding: 4px 0 0 16px;
+    text-align: left;
+    font-size: 14px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+}
+
+div.schedule-controller-people-number-input-container {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    margin: 0;
+    border: 0;
+    padding: 0 16px;
+    text-align: left;
+}
+
+input.schedule-controller-people-number-input {
+    width: 100%;
+    border: 0;
+    background-color: #eee;
+}
+
+div.schedule-controller-checkbox-menu {
+    position: relative;
+    margin-top: 8px;
+}
+
+div.schedule-controller-checkbox-container {
+    position: relative;
+    padding-left: 16px;
+    font-size: 14px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+}
+
+div.schedule-controller-search-btn-container {
+    position: relative;
+    width: 100%;
+    height: 48px;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+button.schedule-controller-search-btn {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 8px;
+    padding: 0;
+    background-color: #F00078;
+    color: #fff;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+}
+
+div.main-content-container {
+    position: relative;
+}
+
+main.main-content {
+    position: relative;
+    margin-top: 68px;
+    padding: 90px 128px;
+    display: flex;
+}
+
+div.schedule-container {
+    position: relative;
+    width: 55%;
+}
+
+div.schedule-rooms {
+    position: relative;
+}
+
+button.schedule-room-btn {
+    position: relative;
+    left: 256px;
+    width: 100%;
+    height: 192px;
+    margin: 0 0 32px 0;
+    border: solid #ccc;
+    border-width: 1px 2px 2px 1px;
+    border-radius: 16px;
+    padding: 0;
+    background-color: white;
+    box-shadow: 0;
+    transition: all .4s;
+}
+
+button.schedule-room-btn:hover {
+    box-shadow: 4px 4px 4px #ccc;
+}
+
+div.schedule-btn-filter {
+    position: absolute;
+    width: 105%;
+    height: 110%;
+    top: -8px;
+    left: -8px;
+    z-index: 2;
+    background-color: #fff;
+    transition: all .4s ease-out;
+}
+
+div.schedule-room-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: 0;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.sc-travel-date-blk {
+    position: relative;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+div.sc-travel-date-container {
+    width: 100%;
+    color: #444;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+div.sc-room-info-part {
+    position: relative;
+    width: 90%;
+    display: flex;
+}
+
+div.room-photo-window {
+    position: relative;
+    width: 256px;
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+div.room-photos {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    display: flex;
+}
+
+div.room-photo-container {
+    position: relative;
+    width: 288px;
+    height: 100%;
+}
+
+img.room-image {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+div.room-info-container {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding-left: 16px;
+    background-color: transparent;
+}
+
+div.room-info-idx-container {
+    position: relative;
+    text-align: left;
+    font-weight: 500;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 18px;
+}
+
+div.room-city-info-container {
+    font-weight: 900;
+    font-size: 20px;
+    color: #444;
+}
+
+div.room-date-info-container {
+    font-weight: 400;
+    font-size: 16px;
+    color: #888;
+}
+
+div.init-img-container {
+    position: relative;
+    width: 100%;
+    height: 384px;
+    border-radius: 16px;
+    background-color: rgba(240, 0, 120, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+div.init-img-container-transparent {
+    position: relative;
+    width: 100%;
+    height: 384px;
+    border-radius: 16px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+div.init-img-container-transparent>img{
+    width: 256px;
+}
+
+div.init-img-inner-container {
+    text-align: center;
+}
+
+div.pseudo-controller-container {
+    position: relative;
+    width: 45%;
+}
+
+div.map-container {
+    position: fixed;
+    width: 640px;
+    height: 360px;
+    top: 580px;
+    right: 4%;
+    z-index: 10;
+}
+
+div.map-inner-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+div.schedule-map {
+    width: 100%;
+    height: 100%;
+    /* background-color: #0099ff; */
+}

@@ -1,0 +1,1 @@
+const GLOBAL_GOOGLE_API_KEY = "";

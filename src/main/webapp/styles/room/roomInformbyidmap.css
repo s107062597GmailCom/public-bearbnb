@@ -1,0 +1,436 @@
+@charset "UTF-8";
+a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: black;
+        }
+
+
+        .inform-page-container {
+            width: 90vw;
+            margin: auto;
+        }
+
+        .inform-page-container-host {
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+        }
+
+        .roomdetail-header {
+            display: flex;
+            justify-content: space-between;
+            width: 55%;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .roomdetail-header-title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hostPicture {
+            border-radius: 100px;
+            width: 100px;
+            height: 100px;
+        }
+
+        .roomdetail-blocks {
+            width: 55%;
+            border-top: 1px #D0D0D0 solid;
+            overflow: hidden;
+        }
+
+
+
+        .roomdetail-baseinform-block {
+            display: flex;
+            margin: 20px;
+        }
+
+        .roomdetail-baseinform-block-icon {
+            font-size: 30px;
+            display: flex;
+            margin-right: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .roomdetail-baseinform-block-icon-sub {
+            color: gray;
+        }
+
+        .roomdetail-description-content {
+            margin: 20px;
+        }
+
+        .roomdetail-offer-blocks {
+            margin: 20px
+        }
+
+        .roomdetail-description-content-readmore {
+            margin-top: 10px;
+        }
+
+        .showalloffers-btn {
+            border: 1px black solid;
+            width: 200px;
+            height: 50px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .3s;
+        }
+
+        .showalloffers-btn:hover {
+            background-color: #3C3C3C;
+            color: white;
+        }
+
+        .roomdetail-offer-alloffers {
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .roomdetail-offer-alloffers div {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .roomdetail-offer-alloffers span {
+            margin-right: 10px;
+        }
+
+        .roomdetail-calendar * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .roomdetail-calendar-container {
+            width: 200%;
+             height: 100%;
+             left: -50%;
+            transition: .5s;
+            position: relative;
+            display: flex;
+            justify-content: space-around;  
+            margin:0px 0px 15px 0px;          
+        }
+
+        .roomdetail-calendar-calendar {
+        	position:relative;
+        	top:0px;
+            width: 23%;
+            height: 20rem;
+           position: relative;
+        }
+
+		.clearSelected{
+		margin:15px 0px 0px 40px ;
+		
+		}
+
+
+        .month {
+            width: 100%;
+            height: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .fas {
+            font-size: 1rem;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .month h1 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .month p {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .weekdays {
+            width: 100%;
+            height: 5%;
+            display: flex;
+            padding: 0 0.4rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .weekdays div {
+            border-radius: 100px;
+            font-weight: 400;
+            font-size: .8rem;
+            width: calc(100%/7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .days {
+            width: 100%;
+            display: flex;
+            padding: 0 0.4rem;
+            flex-wrap: wrap;
+
+            align-items: center;
+
+        }
+
+        .days div {
+            border-radius: 100px;
+            aspect-ratio: 1 / 1;
+            width: calc(100%/7);
+            font-size: .8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .5s;
+        }
+        
+        .invalidTime{
+        	color:#D0D0D0 ;
+        	text-decoration:line-through;
+        }
+
+        .curr-date:hover {
+            border: #3C3C3C 1px solid;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .prev-date,
+        .next-date {
+            opacity: 0.5;
+        }
+
+        .fa-angle-left {
+            position: relative;
+            top: 2rem;
+            left: 5%;
+        }
+
+        .fa-angle-right {
+            position: relative;
+            top: 2rem;
+            left: 91%;
+        }
+
+        .booked,
+        .bookedSt,
+        .bookedEd {
+            color: #D0D0D0;
+        }
+
+        .chosenTimes {
+            background-color:#F0F0F0	 ;
+        }
+
+        .chosenStTime {
+            background-color: #3C3C3C;
+            color: white;
+        }
+
+
+
+        .chosenEdTime {
+            background-color: #3C3C3C;
+            color: white;
+        }
+
+        .clearSelected {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        
+        .availableEdTime{
+            font-weight: 500;
+            color: #f00000;
+        }
+        
+                .order-making-column {
+            width: 30%;
+            /* height: 30rem; */
+            border: 1px rgb(221, 221, 221) solid;
+            border-radius: 20px;
+            position: fixed;
+            top: 4.5rem;
+            right: 5rem;
+            box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;
+            padding: 20px;
+        }
+
+        .order-making-column-subs {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .order-making-column-price {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+
+        }
+
+        .order-making-column-price-per {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .order-making-column-price-night {
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        .order-making-column-price-rating {
+            font-size: 15px;
+        }
+
+        .order-making-column-form {
+            width: 90%;
+/*             height: 8rem;
+ */            margin: auto;
+            border: 1px rgb(194, 194, 194) solid;
+            border-radius: 10px;
+        }
+
+        .order-making-column-date {
+            width: 100%;
+            height: 50%;
+            border-bottom: 1px rgb(194, 194, 194) solid;
+            display: flex;
+        }
+
+        .order-making-column-count {
+            width: 100%;
+            height: 50%;
+            border-top: 0px rgb(194, 194, 194) solid;
+            padding: 3%;
+            font-size: 15px;
+        }
+
+        .order-making-column-stDate {
+            width: 50%;
+            height: 100%;
+            border-right: 1px rgb(194, 194, 194) solid;
+            padding: 3%;
+            font-size: 15px;
+        }
+
+        .order-making-column-edDate {
+            width: 50%;
+            height: 100%;
+            border-right: 0px rgb(194, 194, 194) solid;
+            padding: 3%;
+            font-size: 15px;
+        }
+
+        .order-making-column-input {
+            width: 80%;
+            border: 0px;
+            outline: none;
+        }
+
+        .order-making-column-submit {
+            width: 90%;
+            height: 3rem;
+            border: 0px;
+            margin-left: 5%;
+            margin-right: 5%;
+            background-color: #F00078;
+            color: white;
+            border-radius: 10px;
+            transition: .3s;
+        }
+
+        .order-making-column-submit:active {
+            background-color: #f00000;
+            width: 88%;
+            height: 2.9rem;
+            margin-left: 6%;
+            margin-right: 6%;
+        }
+
+        .order-making-column-count-form {
+            display: flex;
+            align-items: center;
+        }
+
+        .order-making-column-countInput {
+            width:15px !important;
+             border: 0px;
+            outline: none; 
+        }
+
+        .order-making-column-calculate {
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .order-making-column-final {
+            width: 90%;
+            margin-top: 10%;
+            margin-left: 5%;
+            margin-right: 5%;
+            padding-top: 5%;
+            border-top: #D0D0D0 1px solid;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+         .order-making-column-count-count {
+            display: flex;
+            align-items: center;
+        }
+        
+        .order-making-column-count-calcbtn{
+        margin:10px; 
+        border: #3C3C3C 1px solid; 
+        width: 25px; 
+        height: 25px; 
+        display: flex; 
+        justify-content: center; 
+        align-items:center; 
+        border-radius: 100px; 
+        font-size: 20px; 
+        cursor: pointer;
+        }
+        
+        .order-making-column-countInput{
+        	width: 22px !important;
+            border: 0px;
+            outline: none;
+        
+        }
+
+        .hidden {
+            display: none;
+        }

@@ -1,0 +1,254 @@
+div.global-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+main.main-content {
+    position: relative;
+    margin-top: 68px;
+}
+
+div.rooms-container {
+    position: relative;
+    padding: 0 32px 24px 32px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+button.room-container {
+    position: relative;
+    width: 272px;
+    height: 352px;
+    margin: 24px 12px;
+    border: 0;
+    border-radius: 16px;
+    padding: 8px;
+    background-color: transparent;
+    box-shadow: 0 0 0 transparent;
+    transition: all .4s;
+}
+
+button.room-container:hover {
+    box-shadow: 2px 2px 2px #ccc;
+}
+
+div.room-container {
+    position: relative;
+    width: 272px;
+    height: 352px;
+    margin: 24px 12px;
+    border: 0;
+    padding: 0;
+    background-color: #eee;
+}
+
+i.room-container {
+    position: relative;
+    width: 272px;
+    margin: 12px;
+}
+
+div.room-inner-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+div.room-image-windows {
+    position: relative;
+    width: 100%;
+    height: 68%;
+    margin-bottom: 8px;
+    border: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #444;
+}
+
+div.room-images-container {
+    position: relative;
+    height: 100%;
+    left: 0;
+    display: flex;
+    transition: all .4s;
+}
+
+div.room-image-container {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+div.room-text-container {
+    position: relative;
+    width: 100%;
+    height: 28%;
+    background-color: transparent;
+}
+
+div.room-index-text-container {
+    position: relative;
+    text-align: left;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+div.room-city-text-container {
+    font-weight: 600;
+    color: #444;
+}
+
+div.room-distance-text-container {
+    font-weight: 400;
+    color: #888;
+}
+
+div.room-rent-date-text-container {
+    font-weight: 400;
+    color: #888;
+    font-size: 12px;
+}
+
+div.room-price-text-container {
+    font-weight: 600;
+    color: #444;
+}
+
+img.room-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+img.loading-img {
+    position: absolute;
+    width: 192px;
+    height: 192px;
+    top: 10%;
+    left: 50%;
+    margin-left: -96px;
+}
+
+div.room-img-btn {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border: 0;
+    border-radius: 50%;
+    padding: 0;
+    z-index: 2;
+    /* background-color: rgba(255, 255, 255, .8); */
+    /* color: #444; */
+    background-color: transparent;
+    color: transparent;
+    font-size: 16px;
+    line-height: 24px;
+    transition: all .4s;
+}
+
+div.room-prev-img-btn {
+    display: none;
+    top: 50%;
+    left: 4px;
+    margin: -12px 0 0 0;
+}
+
+div.room-next-img-btn {
+    top: 50%;
+    right: 4px;
+    margin: -12px 0 0 0;
+}
+
+h2.room-not-found-hint {
+    margin: 4%;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+div.litter-helper {
+    position:absolute;
+    width: 72px;
+    height: 32px;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+
+div.litter-helper-inner-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.little-btn {
+    position: relative;
+    width: 32px;
+    font-size: 20px;
+    line-height: 32px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 50%;
+}
+
+div.detail-information-blk {
+    position: absolute;
+    top: -8192px;
+    width: 256px;
+    z-index: 3;
+}
+
+div.detail-information-blk-inner-container {
+    position: relative;
+    padding: 2px 8px;
+    font-size: 14px;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px #ccc;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+span.unmatched-keyword-span {
+    text-decoration: line-through;
+}
+
+i.fa-solid.fa-heart {
+    color: #c00;
+}
+
+div.homepage-wish-button {
+    position: fixed;
+    left: -60px;
+    width: 58px;
+    height: 36px;
+    z-index: 30;
+    background-color: #ccc;
+    color: #444;
+    cursor: pointer;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    transition: all .4s;
+}
+
+div.homepage-wish-button:hover {
+    background-color: #aaa;
+}
+
+div.homepage-choose-all-wish-button {
+    top: 700px;
+}
+
+div.homepage-clear-all-wish-button {
+    top: 750px;
+}
+
+div.detail-information-divider {
+    height: 2px;
+    background-color: #444;
+}

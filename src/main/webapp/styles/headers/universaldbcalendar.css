@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Peralta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap');
+
+div.universal-double-calendar-container {
+    position: fixed;
+    top: -8192px;
+    left: 50%;
+    width: 1024px;
+    height: 512px;
+    margin-left: -512px;
+}
+
+div.universal-double-calendar-inner-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 32px;
+    background-color: #eee;
+    box-shadow: 0 0 8px #888;
+}
+
+div.double-calendar-window {
+    position: relative;
+    width: 90%;
+    height: 84%;
+    top: 8%;
+    left: 5%;
+    /* background-color: #999; */
+    overflow: hidden;
+}
+
+div.all-calendar-list {
+    position: absolute;
+    top: -430px;
+    left: -461px;
+    transition: all .2s;
+}
+
+div.calendar-list {
+    position: relative;
+    display: flex;
+}
+
+div.calendar-container {
+    position: relative;
+    width: 461px;
+    height: 430px;
+}
+
+div.calendar {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+div.calendar-header {
+    position: relative;
+    height: 52px;
+    font-size: 20px;
+    line-height: 52px;
+    text-align: center;
+    font-weight: 900;
+}
+
+div.calendar-body {
+    position: relative;
+    padding: 0 32px;
+}
+
+tr.calendar-table-tr>* {
+    width: 64px;
+    height: 54px;
+    text-align: center;
+}
+
+tr.calendar-table-tr th {
+    font-weight: 700;
+    font-family: 'Noto Sans TC', sans-serif;
+    color: #888;
+}
+
+tr.calendar-table-tr div {
+    height: 36px;
+}
+
+tr.calendar-table-tr div.start-date {
+    background-image: linear-gradient(to right, transparent, #ccc);
+}
+
+tr.calendar-table-tr div.stay-date {
+    background-color: #ccc;
+}
+
+tr.calendar-table-tr div.end-date {
+    background-image: linear-gradient(to right, #ccc, transparent);
+}
+
+tr.calendar-table-tr th, tr.calendar-table-tr td {
+    border: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+tr.calendar-table-tr button {
+    width: 48px;
+    height: 48px;
+    margin: -6px auto 0 auto;
+    border: 0;
+    border-radius: 50%;
+    font-weight: 500;
+    background-color: transparent;
+    transition: all .2s;
+}
+
+tr.calendar-table-tr button.selected {
+    background-color: #888;
+}
+
+tr.calendar-table-tr button:hover {
+    background-color: #aaa;
+}
+
+
+button.double-calendar-move-btn {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: 48px;
+    line-height: 48px;
+    color: #888;
+}
+
+button.double-calendar-move-btn:hover {
+    color: #444;
+}
+
+button.double-calendar-move-up {
+    left: 50%;
+    margin-left: -24px;
+}
+
+button.double-calendar-move-down {
+    left: 50%;
+    bottom: 0;
+    margin-left: -24px;
+}
+
+button.double-calendar-move-left {
+    top: 45%;
+}
+
+button.double-calendar-move-right {
+    top: 45%;
+    right: 0;
+}
+
+div.double-calendar-tool-box {
+    position: absolute;
+    height: 36px;
+    left: 96px;
+    bottom: 0;
+    display: flex;
+}
+
+button.double-calendar-tool-btn {
+    position: relative;
+    width: 80px;
+    height: 24px;
+    margin-left: 4px;
+    border: solid 1px #ccc;
+    border-radius: 4px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 22px;
+    color: #444;
+    font-weight: 700;
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color: #ccc;
+}
+
+button.double-calendar-tool-btn:hover {
+    background-color: #bbb;
+}
+
+button.double-calendar-tool-btn:active {
+    background-color: #aaa;
+}
